@@ -1,0 +1,85 @@
+<!-- Angular VIEW Template *** Template VIEW Koleksi buku- buku yang ada -->
+<style type="text/css">
+#view-source {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: 900;
+    }
+
+.list-two{
+	width: 300px;
+}
+
+.card-square.mdl-card {
+	width: 320px;
+	height: 320px;
+}
+
+.card-square > .mdl-card__title {
+	color: #fff;
+	/*background:url('/images/adoelMahameru.JPG') bottom right 15% no-repeat #46B6AC;*/
+	background-color: #93E0A7;
+}
+
+h1{
+	font-family: 'starwars';
+	color:grey;
+}
+span{
+
+	font-family: 'starwars';
+	color:grey;
+	opacity: 0.8;
+}
+</style>
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--1-col">
+		<!-- Empty Content -->
+	</div>
+	
+	<div class="mdl-cell mdl-cell--11-col">
+		<h1>People  </h1>
+		<p><i>People of Star Wars</i></p>
+		<br>
+		<br>
+		
+		<div ng-show="config.oke" class="loader"><b><i>Loading...</i></b></div>
+		<div class="card-square mdl-card mdl-shadow--2dp"  ng-repeat="list in dataListPeople.results" style="margin-bottom: 10px;">
+			<!-- <img src="adoellMahameru.JPG" width="100%" height="90"> -->
+			<div class="mdl-card__title mdl-card--expand">
+		    	<!-- <h2 class="mdl-card__title-text">{{data.judulBuku}}</h2> -->
+				<ul class="list-two mdl-list" >
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<span>{{list.name}}</span>
+							<!-- <span>{{list.judulBuku}}</span>
+							<span class="mdl-list__item-sub-title">{{list.pengarang}}</span> -->
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<!-- <a href="#">&raquo&raquo</a> -->
+						</span>
+					</li>
+				</ul>
+		  	</div>
+
+		  	<div class="mdl-card__actions mdl-card--border" style="margin-bottom: 10px;">
+		    	<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="showDetails(list, $event, $index);">
+		      		Show details...
+		    	</a>
+		  	</div>
+		</div>
+		<br>
+	</div>
+	<a href="/"id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">Back to Homepage &raquo&raquo		
+
+		<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 255.952px; height: 255.952px; transform: translate(-50%, -50%) translate(44px, 11px);"></span>
+		</span>
+	</a>
+</div>
+	
+
+

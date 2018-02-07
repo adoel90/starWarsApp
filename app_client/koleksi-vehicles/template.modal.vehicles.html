@@ -1,0 +1,84 @@
+<style type="text/css">
+h1{
+	font-family: 'starwars';
+	color:grey;
+}
+i{
+	font-family: 'starwars';
+	color:grey;
+}
+</style>
+<md-dialog aria-label="Mango (Fruit)">
+	<form>
+		<md-toolbar >
+			<div class="md-toolbar-tools">
+				<h3></h3>
+				<span flex></span>
+				<md-button ng-click="cancel()">
+					<b>close</b>
+				</md-button>
+		       <!--  <md-button class="md-icon-button" ng-click="cancel()">
+		          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+		        </md-button> -->
+
+			</div>
+		</md-toolbar>
+
+		<md-dialog-content >
+			<div class="md-dialog-content">
+				<div>
+					<md-input-container>
+						<h1>{{editThisData.name}}</h1>
+			      	</md-input-container>
+			      	<br>
+
+			     	<md-input-container>
+						<p><b>Model : </b> <i>{{editThisData.model}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Total of passengers : </b> <i>{{editThisData.passengers}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Maximum Atmospher Speed: </b> <i>{{editThisData.max_atmosphering_speed}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Width vehicle: </b> <i>{{editThisData.length}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>Total maximum crew: </b> <i>{{editThisData.crew}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>Capacity maximum: </b> <i>{{editThisData.consumables}} kg</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>Capacity Cargo maximum: </b> <i>{{editThisData.cargo_capacity}} kg</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+			      	<md-input-container>
+						<p><b>Price: </b> <i>Rp.{{editThisData.cost_in_credits}}</i> </p>	
+			      	</md-input-container>
+			      	<br>
+
+			      	<md-input-container>
+						<p><b>Manufactured by: </b> <i>{{editThisData.manufacturer}}</i> </p>	
+			      	</md-input-container>
+			      	<br>
+
+			    </div>
+			</div>
+		</md-dialog-content>
+	</form>
+</md-dialog>

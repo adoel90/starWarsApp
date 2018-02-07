@@ -1,0 +1,74 @@
+<style type="text/css">
+h1{
+	font-family: 'starwars';
+	color:grey;
+}
+
+i{
+	font-family: 'starwars';
+	color:grey;
+}
+</style>
+<md-dialog aria-label="Mango (Fruit)">
+	<form>
+		<md-toolbar >
+			<div class="md-toolbar-tools">
+				<h3></h3>
+				<span flex></span>
+				<md-button ng-click="cancel()">
+					<b>close</b>
+				</md-button>
+		       <!--  <md-button class="md-icon-button" ng-click="cancel()">
+		          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+		        </md-button> -->
+
+			</div>
+		</md-toolbar>
+
+		<md-dialog-content >
+			<div class="md-dialog-content">
+				<div>
+					<md-input-container>
+						<h1>{{editThisData.name}}</h1>
+			      	</md-input-container>
+			      	<br>
+
+			     	<md-input-container>
+						<p><b>Eye Color : </b> <i>{{editThisData.eyeColor}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Birth of Year : </b> <i>{{editThisData.birthYear}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Hair Color: </b> <i>{{editThisData.hairColor}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+			      	
+					<md-input-container>
+						<p><b>Skin Color: </b> <i>{{editThisData.skinColor}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>Gender: </b> <i>{{editThisData.gender}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>Colonial: </b> <i>{{editThisData.mass}}</i></p>	
+			      	</md-input-container>
+			      	<br>
+
+					<md-input-container>
+						<p><b>height: </b> <i>{{editThisData.height}} cm</i></p>	
+			      	</md-input-container>
+			     
+			    </div>
+			</div>
+		</md-dialog-content>
+	</form>
+</md-dialog>

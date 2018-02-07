@@ -1,0 +1,50 @@
+doctype html
+html(ng-app='starWarsApp')
+	head
+		title Star Wars App
+		base(href="/")
+		meta(charset="UTF-8")
+		meta(name="viewport")(content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='/vendor_mdl/material.css')
+		link(rel='stylesheet', href='/stylesheets/stylesheet.css')
+		link(rel='stylesheet', href='/vendor_angularjs/angular-material.css')
+		script(src='/vendor_mdl/material.js')
+
+	body
+		div.mdl-layout.mdl-js-layout.mdl-layout--fixed-header#header
+			header.mdl-layout__header
+				Home
+	
+			div.mdl-layout__drawer
+				span.mdl-layout-title.ontop Categories:
+				span.mdl-layout-title 
+					a(href='/people') People 
+				span.mdl-layout-title 
+					a(href='/planets') Planets 
+				span.mdl-layout-title 
+					a(href='/vehicles') Vehicles 
+
+			main.mdl-layout__content
+				section.mdl-layout__tab-panel.is-active#scroll-tab-1
+					div.page-content
+						div(ng-view)
+							
+
+		script(src='/vendor_jquery/jquery.js')
+
+		script(src='/vendor_angularjs/angular1.6.4.js')
+		script(src='/vendor_angularjs/angular-route.js')
+		script(src='/vendor_angularjs/angular-animate.js')
+		script(src='/vendor_angularjs/angular-aria.js')
+		script(src='/vendor_angularjs/angular-material.js')
+		
+		script(src='/app.js')
+		script(src='/koleksi-people/koleksi.people.controller.js')
+		script(src='/home-page/home.page.controller.js')
+		script(src='/koleksi-vehicles/koleksi.vehicles.controller.js')
+		script(src='/page-not-found/page.not.found.controller.js')
+
+		script(src='/FACTORY/koleksi.star-wars.factory.js')
+
+		
+			

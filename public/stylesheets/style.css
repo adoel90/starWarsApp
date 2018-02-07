@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+@font-face {
+    
+	font-family: 'starwars';
+    
+	src: url('STARWARS.woff') format('woff');
+    
+	font-weight: normal;
+    
+	font-style: normal;
+
+}
