@@ -5,6 +5,8 @@
 	- Nyalain MongoDB in local -> sudo service mongod start
 
 	- cd to "starWarsApp"
+	
+	- write in console : "npm install"
 
 		
 # How to run : 	
